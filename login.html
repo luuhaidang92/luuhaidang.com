@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Lưu Hải Đăng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .form-container { display: none; }
+        .form-container.active { display: block; }
+        .switch-text { text-align: center; margin-top: 15px; font-size: 0.9rem; color: var(--text-muted); }
+        .switch-text a { cursor: pointer; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">luuhaidang.com</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="courses.html">Khóa học</a></li>
+                    <li><a href="upcoming.html">Lớp sắp mở</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Form Đăng nhập -->
+        <div id="login-form" class="auth-form form-container active">
+            <h2>Đăng nhập</h2>
+            <form action="dashboard.html">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Nhập email của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label>Mật khẩu</label>
+                    <input type="password" placeholder="Nhập mật khẩu" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Đăng nhập</button>
+            </form>
+            <p class="switch-text">Chưa có tài khoản? <a onclick="toggleForm('register-form')">Đăng ký ngay</a></p>
+        </div>
+
+        <!-- Form Đăng ký -->
+        <div id="register-form" class="auth-form form-container">
+            <h2>Đăng ký tài khoản</h2>
+            <form action="dashboard.html">
+                <div class="form-group">
+                    <label>Họ và tên</label>
+                    <input type="text" placeholder="Nhập họ tên" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Nhập email" required>
+                </div>
+                <div class="form-group">
+                    <label>Mật khẩu</label>
+                    <input type="password" placeholder="Tạo mật khẩu" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Đăng ký</button>
+            </form>
+            <p class="switch-text">Đã có tài khoản? <a onclick="toggleForm('login-form')">Đăng nhập</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Lưu Hải Đăng.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleForm(formId) {
+            document.querySelectorAll('.form-container').forEach(el => el.classList.remove('active'));
+            document.getElementById(formId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

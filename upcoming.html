@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lớp học sắp mở - Lưu Hải Đăng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS riêng cho trang này để tạo danh sách lớp học */
+        .upcoming-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 24px;
+        }
+        .upcoming-item {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .upcoming-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+        .upcoming-meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 15px;
+        }
+        .badge {
+            background: #FEF3C7;
+            color: #D97706;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">luuhaidang.com</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="courses.html">Khóa học</a></li>
+                    <li><a href="upcoming.html" style="color: var(--primary); font-weight: 700;">Lớp sắp mở</a></li>
+                    <li><a href="login.html" class="btn btn-outline">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2>Chương trình & Lớp học dự kiến mở</h2>
+            <p style="color: var(--text-muted); margin-top: 10px;">Đăng ký quan tâm để nhận thông báo và link phòng học online sớm nhất.</p>
+        </div>
+
+        <div class="upcoming-list">
+            <!-- Lớp 1 -->
+            <div class="upcoming-item">
+                <div class="upcoming-info">
+                    <span class="badge">Sắp khai giảng</span>
+                    <h3 style="margin-top: 10px;">Lớp Python Nâng Cao (Khai giảng 15/12)</h3>
+                    <div class="upcoming-meta">
+                        <span>🕒 Thời gian: 19:30 - 21:00 (Thứ 2, 4, 6)</span>
+                        <span>💻 Hình thức: Online qua Zoom</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Đăng ký nhận thông báo</button>
+                </div>
+            </div>
+
+            <!-- Lớp 2 -->
+            <div class="upcoming-item">
+                <div class="upcoming-info">
+                    <span class="badge" style="background: #E0E7FF; color: #4338CA;">Đang lên lịch</span>
+                    <h3 style="margin-top: 10px;">Kỹ năng Xây dựng Web Frontend</h3>
+                    <div class="upcoming-meta">
+                        <span>🕒 Thời gian: Dự kiến cuối tháng 12</span>
+                        <span>💻 Hình thức: Online</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Đăng ký nhận thông báo</button>
+                </div>
+            </div>
+            
+            <!-- Lớp 3 -->
+            <div class="upcoming-item">
+                <div class="upcoming-info">
+                    <span class="badge" style="background: #D1FAE5; color: #047857;">Nhận gạch đá</span>
+                    <h3 style="margin-top: 10px;">Phân tích Dữ liệu với Python</h3>
+                    <div class="upcoming-meta">
+                        <span>🕒 Thời gian: Sẽ thông báo sau</span>
+                        <span>💻 Hình thức: Offline tại Hà Nội</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-outline">Xem chi tiết</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Lưu Hải Đăng. Bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

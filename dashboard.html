@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung tâm học viên - Lưu Hải Đăng</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">luuhaidang.com</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="courses.html">Khóa học</a></li>
+                    <li><a href="dashboard.html" style="color: var(--primary); font-weight: 700;">Góc học tập</a></li>
+                    <li><a href="index.html" class="btn btn-outline">Đăng xuất</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Chào mừng trở lại!</h2>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">Đây là những khóa học bạn đã đăng ký.</p>
+
+        <div class="grid-courses">
+            <!-- Khóa học đã đăng ký 1 -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80" alt="Khóa học" class="course-img">
+                <div class="course-content">
+                    <h3 class="course-title">Lập trình Python cơ bản</h3>
+                    <div style="background: #E5E7EB; height: 8px; border-radius: 4px; margin: 15px 0;">
+                        <div style="background: var(--primary); width: 45%; height: 100%; border-radius: 4px;"></div>
+                    </div>
+                    <p class="course-desc">Đã học: 45%</p>
+                    <a href="course-detail.html" class="btn btn-primary" style="width: 100%;">Vào học tiếp</a>
+                </div>
+            </div>
+
+            <!-- Khóa học đã đăng ký 2 -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80" alt="Khóa học" class="course-img">
+                <div class="course-content">
+                    <h3 class="course-title">Thiết kế Web với HTML/CSS</h3>
+                    <div style="background: #E5E7EB; height: 8px; border-radius: 4px; margin: 15px 0;">
+                        <div style="background: var(--primary); width: 100%; height: 100%; border-radius: 4px;"></div>
+                    </div>
+                    <p class="course-desc">Đã hoàn thành</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">Xem chứng chỉ</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Lưu Hải Đăng.</p>
+        </div>
+    </footer>
+</body>
+</html>

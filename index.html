@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưu Hải Đăng - Trang chủ</title>
+    <!-- Liên kết tới file CSS chung -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Thanh Menu (Header) -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">luuhaidang.com</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="courses.html">Khóa học</a></li>
+                    <li><a href="upcoming.html">Lớp sắp mở</a></li>
+                    <li><a href="login.html" class="btn btn-outline">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Phần nội dung chính -->
+    <main class="container">
+        <!-- Phần Giới thiệu bản thân -->
+        <section style="text-align: center; margin-bottom: 50px; padding: 40px 20px; background: #fff; border-radius: var(--radius); border: 1px solid var(--border-color);">
+            <h1 style="font-size: 2.5rem; margin-bottom: 10px; color: var(--text-main);">Xin chào, tôi là Lưu Hải Đăng</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                Chào mừng bạn đến với không gian học tập của tôi. Tại đây, tôi chia sẻ các khóa học, bài giảng và tài liệu chuyên môn để giúp bạn phát triển kỹ năng và kiến thức.
+            </p>
+        </section>
+
+        <!-- Phần Khóa học nổi bật -->
+        <section>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2>Khóa học nổi bật</h2>
+                <a href="courses.html" style="font-weight: 500;">Xem tất cả &rarr;</a>
+            </div>
+
+            <!-- Lưới hiển thị khóa học -->
+            <div class="grid-courses">
+                <!-- Khóa học mẫu 1 -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80" alt="Khóa học 1" class="course-img">
+                    <div class="course-content">
+                        <h3 class="course-title">Lập trình Python cơ bản</h3>
+                        <p class="course-desc">Nắm vững nền tảng Python từ con số 0, phù hợp cho người mới bắt đầu.</p>
+                        <a href="course-detail.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <!-- Khóa học mẫu 2 -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80" alt="Khóa học 2" class="course-img">
+                    <div class="course-content">
+                        <h3 class="course-title">Thiết kế Web với HTML/CSS</h3>
+                        <p class="course-desc">Tự tay xây dựng giao diện trang web đẹp mắt và chuẩn responsive.</p>
+                        <a href="course-detail.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <!-- Khóa học mẫu 3 -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" alt="Khóa học 3" class="course-img">
+                    <div class="course-content">
+                        <h3 class="course-title">Phân tích dữ liệu cơ bản</h3>
+                        <p class="course-desc">Học cách đọc, hiểu và trực quan hóa dữ liệu bằng các công cụ phổ biến.</p>
+                        <a href="course-detail.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chân trang (Footer) -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Lưu Hải Đăng. Bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

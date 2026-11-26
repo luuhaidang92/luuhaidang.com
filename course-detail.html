@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết khóa học - Lưu Hải Đăng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .course-detail-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .course-detail-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+            height: 0;
+            background: #000;
+            border-radius: var(--radius);
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .sidebar-box {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 24px;
+            position: sticky;
+            top: 90px;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">luuhaidang.com</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="courses.html">Khóa học</a></li>
+                    <li><a href="upcoming.html">Lớp sắp mở</a></li>
+                    <li><a href="login.html" class="btn btn-outline">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Tiêu đề khóa học -->
+        <div style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">
+            <p style="color: var(--text-muted); margin-bottom: 5px;">Khóa học / Lập trình</p>
+            <h1 style="font-size: 2.2rem;">Lập trình Python cơ bản</h1>
+            <p style="color: var(--text-muted); margin-top: 10px;">Cung cấp nền tảng vững chắc về Python cho người mới bắt đầu.</p>
+        </div>
+
+        <div class="course-detail-layout">
+            <!-- Cột trái: Video và Nội dung -->
+            <div>
+                <h3 style="margin-bottom: 15px;">Bài giảng mẫu</h3>
+                
+                <!-- Khung nhúng Video Google Drive (Mẫu) -->
+                <div class="video-wrapper">
+                    <!-- Đây là link nhúng video mẫu. Bạn sẽ thay bằng link Google Drive của bạn sau -->
+                    <iframe src="https://drive.google.com/file/d/1d5B6E0g_vHjM4f9_pQx8yZ1wK2m3N4O5/preview" allow="autoplay"></iframe>
+                </div>
+
+                <h3 style="margin: 30px 0 15px 0;">Giới thiệu khóa học</h3>
+                <p style="color: var(--text-muted); line-height: 1.8;">
+                    Khóa học này được thiết kế dành riêng cho những bạn chưa từng tiếp xúc với lập trình. 
+                    Chúng ta sẽ đi từ những khái niệm cơ bản nhất như biến, vòng lặp, cho đến việc xây dựng 
+                    những ứng dụng nhỏ đầu tiên. Video bài giảng được ghi hình trực tiếp, kèm theo tài liệu 
+                    PDF để bạn tải về ôn tập.
+                </p>
+
+                <h3 style="margin: 30px 0 15px 0;">Bạn sẽ học được gì?</h3>
+                <ul style="color: var(--text-muted); padding-left: 20px; line-height: 2;">
+                    <li>Hiểu và viết được code Python cơ bản.</li>
+                    <li>Làm việc với các kiểu dữ liệu: chuỗi, số, danh sách.</li>
+                    <li>Biết cách sử dụng các cấu trúc điều khiển (if/else, vòng lặp).</li>
+                    <li>Tự viết được một ứng dụng dòng lệnh đơn giản.</li>
+                </ul>
+            </div>
+
+            <!-- Cột phải: Thông tin đăng ký -->
+            <div>
+                <div class="sidebar-box">
+                    <h3>Đăng ký khóa học</h3>
+                    <div class="price">Miễn phí</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+                        Đăng nhập để lưu khóa học vào tài khoản của bạn và nhận link học online.
+                    </p>
+                    <a href="login.html" class="btn btn-primary" style="width: 100%; display: block; margin-bottom: 15px;">Đăng nhập để đăng ký</a>
+                    
+                    <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 20px; border-top: 1px solid var(--border-color); padding-top: 15px;">
+                        <p>📚 12 bài giảng</p>
+                        <p>⏱️ Thời lượng: 5 giờ</p>
+                        <p>📄 Có tài liệu kèm theo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Lưu Hải Đăng. Bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
